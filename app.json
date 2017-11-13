@@ -1,12 +1,27 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/flex/flex",
+    "pages/list/list"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#108ee9",
-    "navigationBarTitleText": "第一个小程序",
-    "navigationBarTextStyle":"white"
+  "window": {
+    "navigationBarBackgroundColor": "#09ba07",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "牛刀小试",
+    "backgroundColor": "#fbf9fe",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#108ee9",
+    "borderStyle": "white",
+    "backgroundColor": "#f6f8f9",
+    "position": "bottom",
+    "list":[{
+      "pagePath":"pages/flex/flex",
+      "text":"布局"
+    },{
+       "pagePath": "pages/list/list",
+       "text": "列表"
+    }]
   }
 }
