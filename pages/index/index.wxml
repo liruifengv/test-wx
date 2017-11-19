@@ -5,7 +5,7 @@
       <view class="group-title {{group.formateDate === '今日' ? 'on' : ''}}">{{group.formateDate}}</view>
     </view>
     <view class="group-content">
-      <view class="group-content-item" wx:for="{{group.articles}}" wx:for-item = "item" wx:key="{{item.contentId}}" data-item="{{item}}">
+      <view class="group-content-item" wx:for="{{group.articles}}" wx:for-item = "item" wx:key="{{item.contentId}}" data-item="{{item}}" bindtap="showDetail" class="group-content-item {{item.hasVisited ? 'visited' : ''}}">
         <view class="group-content-item-desc ellipsis-multi-line ellipsis-line-3">{{item.title}}</view>
         <image class="group-content-item-img" mode="aspectFill" src="{{ item.cover || defaultImg.coverImg}}"></image>
       </view>

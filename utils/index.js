@@ -38,7 +38,7 @@ let util = {
        },
        fail (err) {
         let msg = err.errMsg || '';
-        if( /getStorage):fail/.test(msg)){
+        if( /getStorage:fail/.test(msg)){
           self.setStorageData(key)
         }
        }
