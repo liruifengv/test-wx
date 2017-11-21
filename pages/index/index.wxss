@@ -10,8 +10,7 @@
 }
 
 .wrapper .group-title {
-  position: relative;
-  display: inline-block;
+  float: left;
   padding: 0 12rpx;
   height: 40rpx;
   line-height: 40rpx;

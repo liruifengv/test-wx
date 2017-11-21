@@ -179,7 +179,7 @@ Page({
     let contentId = item.contentId || 0
     this.markRead(contentId)
     wx.navigateTo({
-      url: `../detail/detail?contendId=${contentId}`,
+      url: `../detail/detail?contentId=${contentId}`,
       success: function(res){
         // success
       },
